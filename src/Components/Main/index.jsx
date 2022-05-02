@@ -1,9 +1,9 @@
 import React from "react";
-import Selects from "../Selects";
+import ResearchField from "../ResearchField";
 
 function Main() {
   return(
-    <Selects />
+    <ResearchField />
   )
 }
 
