@@ -1,12 +1,67 @@
 .App {
   text-align: center;
+  padding: 10px;
+}
+
+.fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 70px;
 }
 
 .select {
   width: 250px;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .select:hover {
   cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  width: 250px;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  height: 350px;
+  padding: 5px 0px;
+  border-radius: 10px;
+  background-color: #0b1f38;
+}
+
+.table-style {
+  background-color: #3b80ff;
+  height: 300px;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 90%;
+}
+.table-style td {
+  padding: 5px 10px;
+}
+
+.buttons button {
+  background-color: #0b1f38;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+}
+
+.key {
+  color: ghostwhite;
+}
+.value {
+  color:#0b1f38
 }
