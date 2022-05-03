@@ -1,6 +1,13 @@
+body {
+  background-color: #E8E9EE;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
 .App {
   text-align: center;
-  padding: 10px;
 }
 
 .fields {
@@ -8,11 +15,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 .select {
-  width: 250px;
+  width: 90%;
   margin: 10px 0;
 }
 
@@ -27,41 +34,64 @@
   width: 250px;
 }
 
-.details {
-  display: flex;
-  justify-content: center;
-  height: 350px;
-  padding: 5px 0px;
-  border-radius: 10px;
-  background-color: #0b1f38;
-}
-
-.table-style {
-  background-color: #3b80ff;
-  height: 300px;
-  font-weight: bold;
-  border-radius: 15px;
-  width: 90%;
-}
-.table-style td {
-  padding: 5px 10px;
-}
-
 .buttons button {
   background-color: #0b1f38;
   color: #fff;
   padding: 10px;
   border-radius: 10px;
   font-weight: bold;
+  font-size: 17px;
+  width: 130px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+.buttons img {
+  height: 40px;
 }
 
 .buttons button:hover {
   cursor: pointer;
 }
 
-.key {
-  color: ghostwhite;
+.image-div {
+  height: 100px;
 }
-.value {
-  color:#0b1f38
+
+.image-div img {
+  height: 90px;
+}
+
+.titulo {
+  margin-top: 10px;
+}
+
+
+@media screen and (min-width:790px){ 
+  .main {
+    display: flex;
+  }
+
+  .fields {
+    justify-content: flex-start;
+    margin-top: 39px;
+    width: 350px;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 10px;
+    width: 270px;
+  }
+
+  .details {
+    min-width: 520px;
+  }
+
+  .card {
+    padding: 5px 10px;
+  }
+
+
 }

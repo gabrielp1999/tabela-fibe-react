@@ -1,5 +1,6 @@
 import React from 'react';
 import Select from 'react-select';
+import { Search, cleaning_services } from "@material-ui/icons";
 
 function ResearchField({ 
   brands,selectedBrand, models, years, yearSelected, selectedModel, yearChange, 
@@ -31,8 +32,8 @@ function ResearchField({
         onChange={yearChange}
       />
       <div className='buttons'>
-        <button onClick={() => clean()}>Limpar</button>
-        <button onClick={() => search()}>Pesquisar</button>
+        <button onClick={() => clean()}>Limpar <cleaning_services /></button>
+        <button onClick={() => search()}>Pesquisar<Search style={{ color: "#fff" }} /></button>
       </div>
     </div>    
   )

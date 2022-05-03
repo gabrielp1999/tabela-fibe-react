@@ -29,6 +29,7 @@ function Main() {
     setSelectedBrand(obj);
     setSelectedModel(null);
     setYearSelected(null);
+    setShow(false)
   }
   useEffect(() => {
     if(selectedBrand){
@@ -52,11 +53,13 @@ function Main() {
   const modelChange = obj => {
     setSelectedModel(obj);
     setYearSelected(null)
-    }
+    setShow(false);
+  }
 
-     const yearChange = obj => {
-      setYearSelected(obj);
-     }
+  const yearChange = obj => {
+    setYearSelected(obj);
+    setShow(false);
+  }
 
   useEffect(() => {
     if(selectedModel) {
@@ -86,11 +89,11 @@ function Main() {
     setSelectedBrand(null);
     setSelectedModel(null);
     setYearSelected(null);
+    setShow(false);
   }
 
   return(
     <section className='main'>
-       <Details car={car} show={show}/>
        <ResearchField 
          brands={brands}
          selectedBrand={selectedBrand}
@@ -104,6 +107,10 @@ function Main() {
          clean={clean}
          search={search}
        />
+       <Details 
+        car={car} 
+        show={show}
+      />
     </section>
   )
 }

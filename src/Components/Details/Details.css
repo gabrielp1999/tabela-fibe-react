@@ -1,0 +1,88 @@
+.css-qc6sy-singleValue{
+  display: flex !important;
+  justify-content: flex-start !important;
+}
+
+.css-14el2xx-placeholder  {
+  display: flex !important;
+  justify-content: flex-start !important;
+}
+
+.card-value-car .key {
+  color: #3475ed;
+  font-size: 15px;
+}
+
+.card-value-car .value {
+  color: #fff;
+  font-size: 18px;
+}
+
+.key {
+  color:#a6a5b2;
+  padding:5px 0;
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+.value {
+  color:#0b1f38;
+  padding: 5px 0;
+   display: flex;
+  justify-content: flex-end; 
+  width: 50%
+}
+
+.card-value-car {
+  height: 60px;
+  background-color: #0b1f38 !important;
+  display: flex;
+  align-items: center;
+  border-radius: 5px 5px 25px 25px !important;
+  margin-top: 5px;
+}
+
+
+.details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px 0px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.div-info {
+  font-weight: bold;
+  border-radius: 15px;
+  width: 90%;
+  margin-top: 15px;
+  margin: 0px auto;
+}
+
+.card {
+  display: flex;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 4px;
+  padding: 5px 5px;
+  width: 98%;
+}
+
+.div-icon {
+  display: flex;
+  justify-content: center;
+}
+.icon-right {
+  width: 40%;
+  display: flex;
+  justify-content: right;
+}
+.icon-left {
+  width: 40%;
+  display: flex;
+  justify-content: left;
+}
+.icon-right img, .icon-left img {
+  height: 25px;
+}
