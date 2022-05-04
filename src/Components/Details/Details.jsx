@@ -55,7 +55,7 @@ function Details(props) {
           </div>
         </div> 
         <div className='div-img'>
-          <img src="http://1.bp.blogspot.com/-RtAyYJ-wDMI/UqHHITQj9dI/AAAAAAAAF5s/-MZKETwfxn0/s1600/carro_top2.png" alt="" />
+          <img src={props.imageCar} alt="" />
         </div>
 
       </Slider>

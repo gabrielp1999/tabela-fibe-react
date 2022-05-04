@@ -2,6 +2,7 @@ import React,{ useEffect, useState } from 'react';
 import axios from 'axios';
 import ResearchField from "../ResearchField";
 import Details from '../Details/Details';
+import useImageCar from '../../hooks/useImageCar';
 
 function Main() {
   const apiBase = `https://parallelum.com.br/fipe/api/v1`;
@@ -13,6 +14,8 @@ function Main() {
   const [yearSelected, setYearSelected] = useState(null);
   const [car, setCar] = useState({});
   const [show, setShow] = useState(false);
+  const [imageCar, setImageCar] = useState('');
+  const imgCar = useImageCar();
   
   useEffect(()=> {
     axios.get(`${apiBase}/carros/marcas`).then((response) =>{
@@ -80,9 +83,19 @@ function Main() {
     if(yearSelected){
       axios
       .get(`${apiBase}/carros/marcas/${selectedBrand.value}/modelos/${selectedModel.value}/anos/${yearSelected.value}`)
-      .then((response) => setCar(response.data));
+      .then((response) => {
+        setCar(response.data);
+        const term = `${car.Marca} ${car.Modelo} ${car.AnoModelo}`;
+        console.log({term});
+        searchImageCar(term);
+      });
       setShow(true);
     }
+  }
+
+  const searchImageCar = (termSearch) => {
+    if(termSearch)
+      imgCar.getImage(termSearch).then(imgUrl => setImageCar(imgUrl));
   }
 
   const clean = () => {
@@ -94,6 +107,7 @@ function Main() {
 
   return(
     <section className='main'>
+      <h2>Tabela Fipe</h2>
        <ResearchField 
          brands={brands}
          selectedBrand={selectedBrand}
@@ -108,6 +122,7 @@ function Main() {
          search={search}
        />
        <Details 
+        imageCar={imageCar}
         car={car} 
         show={show}
       />
