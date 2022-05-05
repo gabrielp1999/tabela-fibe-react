@@ -56,7 +56,7 @@ function Details(props) {
             <div className='value'>{props.car.CodigoFipe}</div>
           </div>
           <div className='card card-value-car'>
-            <div className='key'>Preço medio:</div>
+            <div className='key'>Preço médio:</div>
             <div className='value'>{props.car.Valor}</div>
           </div>
         </div> 

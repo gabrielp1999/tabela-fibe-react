@@ -10,7 +10,6 @@ body {
 .nav-bar {
   height: 50px;
   width: 100vw;
-  font-size: 25px;
   background-color: #0b1f38;
   margin-bottom: 15px;
   display: flex;
@@ -18,11 +17,17 @@ body {
   align-items: center;
   font-weight: bold;
   color: #fff;
-  gap: 5px;
+  gap: 10px;
 }
+
+.nav-bar label {
+  font-size: 25px;
+}
+
 .icon-car {
   color: #fff;
 }
+
 
 
 .App {

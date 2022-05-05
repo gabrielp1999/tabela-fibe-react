@@ -9,13 +9,13 @@
 }
 
 .card-value-car .key {
-  color: #3475ed;
+  color: rgba(24, 142, 197, 1);
   font-size: 15px;
 }
 
 .card-value-car .value {
   color: #fff;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .key {
