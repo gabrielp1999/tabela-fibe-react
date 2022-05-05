@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/tabela-fipe-react/static/css/main.e4d21f13.css",
-    "main.js": "/tabela-fipe-react/static/js/main.a98ae3a6.js",
+    "main.css": "/tabela-fipe-react/static/css/main.195b5f59.css",
+    "main.js": "/tabela-fipe-react/static/js/main.f7fd78aa.js",
     "static/js/787.48ef7f1a.chunk.js": "/tabela-fipe-react/static/js/787.48ef7f1a.chunk.js",
     "static/media/slick.svg": "/tabela-fipe-react/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/tabela-fipe-react/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/tabela-fipe-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/tabela-fipe-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tabela-fipe-react/index.html",
-    "main.e4d21f13.css.map": "/tabela-fipe-react/static/css/main.e4d21f13.css.map",
-    "main.a98ae3a6.js.map": "/tabela-fipe-react/static/js/main.a98ae3a6.js.map",
+    "main.195b5f59.css.map": "/tabela-fipe-react/static/css/main.195b5f59.css.map",
+    "main.f7fd78aa.js.map": "/tabela-fipe-react/static/js/main.f7fd78aa.js.map",
     "787.48ef7f1a.chunk.js.map": "/tabela-fipe-react/static/js/787.48ef7f1a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4d21f13.css",
-    "static/js/main.a98ae3a6.js"
+    "static/css/main.195b5f59.css",
+    "static/js/main.f7fd78aa.js"
   ]
 }
