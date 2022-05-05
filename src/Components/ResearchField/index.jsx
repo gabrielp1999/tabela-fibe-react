@@ -24,6 +24,7 @@ function ResearchField({
         placeholder='Buscar Modelo'
         onChange={modelChange}
         value={selectedModel}
+        isDisabled={selectedBrand === null}
       />
       <Select
         className='select' 
@@ -31,6 +32,7 @@ function ResearchField({
         options={years}
         value={yearSelected}
         onChange={yearChange}
+        isDisabled={selectedModel === null}
       />
       <div className='buttons'>
         <button onClick={() => search()}>Pesquisar<Search style={{ color: "#fff" }} /></button>
