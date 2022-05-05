@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tabela-fipe-react/static/css/main.e4d21f13.css",
-    "main.js": "/tabela-fipe-react/static/js/main.81fc1f28.js",
+    "main.js": "/tabela-fipe-react/static/js/main.a98ae3a6.js",
     "static/js/787.48ef7f1a.chunk.js": "/tabela-fipe-react/static/js/787.48ef7f1a.chunk.js",
     "static/media/slick.svg": "/tabela-fipe-react/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/tabela-fipe-react/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "static/media/slick.woff": "/tabela-fipe-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tabela-fipe-react/index.html",
     "main.e4d21f13.css.map": "/tabela-fipe-react/static/css/main.e4d21f13.css.map",
-    "main.81fc1f28.js.map": "/tabela-fipe-react/static/js/main.81fc1f28.js.map",
+    "main.a98ae3a6.js.map": "/tabela-fipe-react/static/js/main.a98ae3a6.js.map",
     "787.48ef7f1a.chunk.js.map": "/tabela-fipe-react/static/js/787.48ef7f1a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e4d21f13.css",
-    "static/js/main.81fc1f28.js"
+    "static/js/main.a98ae3a6.js"
   ]
 }
