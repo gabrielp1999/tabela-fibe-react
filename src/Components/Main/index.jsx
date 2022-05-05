@@ -13,6 +13,8 @@ function Main() {
   const [yearSelected, setYearSelected] = useState(null);
   const [car, setCar] = useState({});
   const [show, setShow] = useState(false);
+  const [imgCar, setImgCar] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
   
   useEffect(()=> {
     axios.get(`${apiBase}/carros/marcas`).then((response) =>{
@@ -78,12 +80,30 @@ function Main() {
 
   const search = () => {
     if(yearSelected){
+      setIsLoading(true);
       axios
       .get(`${apiBase}/carros/marcas/${selectedBrand.value}/modelos/${selectedModel.value}/anos/${yearSelected.value}`)
-      .then((response) => setCar(response.data));
+      .then((response) => {
+        setCar(response.data);
+        const term = `${response.data.Marca} ${response.data.Modelo} ${response.data.AnoModelo}`;
+        // searchImageCar(term);
+        setImgCar('http://1.bp.blogspot.com/-RtAyYJ-wDMI/UqHHITQj9dI/AAAAAAAAF5s/-MZKETwfxn0/s1600/carro_top2.png')
+        setIsLoading(false);
+      })
+      .catch(() => setIsLoading(false));
       setShow(true);
     }
   }
+
+  // const searchImageCar = (termSearch) => {
+  //   if(termSearch) {
+  //     axios
+  //       .get(`https://tabela-fipe-flipggs.vercel.app/api/image?q=${termSearch}`)
+  //       .then((response) => {
+  //         setImgCar(response.data.imageUrl);
+  //       });
+  //   }
+  // }
 
   const clean = () => {
     setSelectedBrand(null);
@@ -107,7 +127,9 @@ function Main() {
          clean={clean}
          search={search}
        />
-       <Details 
+       <Details
+        isLoading={isLoading}
+        imgCar={imgCar}
         car={car} 
         show={show}
       />
@@ -116,3 +138,8 @@ function Main() {
 }
 
 export default Main;
+
+
+/// 1024 px desktop 
+/// 768 tablet
+// conteudo centralizado e com titulo

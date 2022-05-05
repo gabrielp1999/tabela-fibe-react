@@ -6,6 +6,25 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
+.nav-bar {
+  height: 50px;
+  width: 100vw;
+  font-size: 25px;
+  background-color: #0b1f38;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  gap: 5px;
+}
+.icon-car {
+  color: #fff;
+}
+
+
 .App {
   text-align: center;
 }
@@ -15,11 +34,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 30px;
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .select {
-  width: 90%;
+  width: 100%;
   margin: 10px 0;
 }
 
@@ -29,23 +49,25 @@ body {
 
 .buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 5px;
-  width: 250px;
+  width: 100%;
+  margin-top: 15px;
 }
 
 .buttons button {
   background-color: #0b1f38;
   color: #fff;
-  padding: 10px;
+  padding: 0 10px;
   border-radius: 10px;
   font-weight: bold;
   font-size: 17px;
-  width: 130px;
-  height: 40px;
+  width: 47%;
+  height: 45px;
   align-items: center;
   display: flex;
-  gap: 5px;
+  justify-content: center;
+  gap: 10px;
 }
 .buttons img {
   height: 40px;
@@ -68,30 +90,61 @@ body {
 }
 
 
-@media screen and (min-width:790px){ 
+@media screen and (min-width:768px) {
+  .details {
+    width: 75vw !important;
+    margin: 20px auto;
+  }
+
+
+  .fields {
+    justify-content: flex-start;
+    margin-top: 20px auto;
+    width: 70vw;
+  }
+
+}
+
+
+@media screen and (min-width:1020px){ 
+
   .main {
     display: flex;
+    width: 1024px;
+    margin: 0px auto;
+    justify-content: center;
+    gap: 3%;
   }
 
   .fields {
     justify-content: flex-start;
-    margin-top: 39px;
-    width: 350px;
+    margin-top: 20px;
+    width: 40%;
   }
 
   .buttons {
     display: flex;
     gap: 10px;
-    width: 270px;
+    width: 100%;
+  }
+
+  .buttons button {
+    padding: 0px 10px;
   }
 
   .details {
-    min-width: 520px;
+    width: 40% !important;
+    margin-top: 20px !important;
   }
 
   .card {
-    padding: 5px 10px;
+    padding: 5px 15px;
+    width: 95%;
   }
 
+  .div-infor {
+    margin-left: 17px;
+    width: 95%;
+  }
 
 }

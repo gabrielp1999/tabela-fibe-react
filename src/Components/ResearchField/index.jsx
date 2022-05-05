@@ -33,8 +33,8 @@ function ResearchField({
         onChange={yearChange}
       />
       <div className='buttons'>
-        <button onClick={() => clean()}>Limpar <CleaningServicesIcon style={{ color: "#fff" }} /></button>
         <button onClick={() => search()}>Pesquisar<Search style={{ color: "#fff" }} /></button>
+        <button onClick={() => clean()}>Limpar <CleaningServicesIcon style={{ color: "#fff" }} /></button>
       </div>
     </div>    
   )

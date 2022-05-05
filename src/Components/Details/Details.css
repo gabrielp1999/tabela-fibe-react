@@ -33,22 +33,15 @@
   width: 50%
 }
 
-.card-value-car {
-  height: 60px;
-  background-color: #0b1f38 !important;
-  display: flex;
-  align-items: center;
-  border-radius: 5px 5px 25px 25px !important;
-  margin-top: 5px;
-}
+
 
 
 .details {
   padding: 5px 0px;
   border-radius: 10px;
-  width: 85%;
-  margin-left: 30px;
-  margin-top: 20px;
+  width: 91vw;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 .div-info {
@@ -61,10 +54,19 @@
 .card {
   display: flex;
   background: #fff;
-  margin: 4px 0;
+  margin: 4px auto;
   border-radius: 4px;
-  padding: 5px 5px;
-  width: 97%;
+  padding: 5px 28px;
+  width: 85%;
+}
+
+.card-value-car {
+  height: 60px;
+  background-color: #0b1f38;
+  display: flex;
+  align-items: center;
+  border-radius: 5px 5px 25px 25px;
+  margin-top: 20px;
 }
 
 .div-img {
@@ -76,7 +78,14 @@
   width: 100%;
 }
 
-.sliderBiel {
+.slider {
   margin: 0 auto !important;
 }
 
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
+.slick-dots  li{
+display: none;
+}

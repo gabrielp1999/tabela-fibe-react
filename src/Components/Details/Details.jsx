@@ -19,11 +19,17 @@ function Details(props) {
     return null;
   }
 
-  return (
-
-    
+  if(props.isLoading){
+    return (
       <div className='details'>
-         <Slider className='sliderBiel' {...settings}>
+        <img src='/tabela-fipe-react/loading.gif' alt='carregando' />
+      </div>
+    );
+  }
+
+  return (
+    <div className='details'>
+      <Slider className='slider' {...settings}>
         <div className='div-info'>
           <div className='card'>
             <div className='key'>Mês de referência:</div>
@@ -55,9 +61,8 @@ function Details(props) {
           </div>
         </div> 
         <div className='div-img'>
-          <img src="http://1.bp.blogspot.com/-RtAyYJ-wDMI/UqHHITQj9dI/AAAAAAAAF5s/-MZKETwfxn0/s1600/carro_top2.png" alt="" />
+          <img src={props.imgCar} alt="" />
         </div>
-
       </Slider>
     </div>
 
